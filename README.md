@@ -9,11 +9,8 @@ $ npm install --save receipt-parser
 
 ## Usage
 
-```js
-var receiptParser = require('receipt-parser');
+__See Examples__
 
-receiptParser('Rainbow');
-```
 ## License
 
 MIT © [taoyuan]()
