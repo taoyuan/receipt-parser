@@ -15,7 +15,6 @@ __See Examples__
 
 MIT © [taoyuan]()
 
-
 [npm-image]: https://badge.fury.io/js/receipt-parser.svg
 [npm-url]: https://npmjs.org/package/receipt-parser
 [travis-image]: https://travis-ci.org/taoyuan/receipt-parser.svg?branch=master
