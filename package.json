@@ -8,9 +8,6 @@
     "email": "torworx@gmail.com",
     "url": ""
   },
-  "files": [
-    "lib"
-  ],
   "main": "lib/index.js",
   "keywords": [
     "receipt",
