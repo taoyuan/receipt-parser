@@ -1,0 +1,46 @@
+{
+  "name": "receipt-parser",
+  "version": "0.1.0",
+  "description": "A receipt parser for node.js",
+  "homepage": "",
+  "author": {
+    "name": "taoyuan",
+    "email": "torworx@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "receipt",
+    "parser"
+  ],
+  "devDependencies": {
+    "eslint-config-xo-space": "^0.8.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^1.1.1",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-nsp": "^2.3.0",
+    "gulp-coveralls": "^0.1.4"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "/receipt-parser",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.3.0",
+    "tokenizee": "^0.1.3"
+  }
+}
