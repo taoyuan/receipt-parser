@@ -1,7 +1,7 @@
 'use strict';
 
 var fs = require('fs');
-var Parser = require('../../lib/index').Parser;
+var Parser = require('../..');
 
 var schema = [{
   name: '序号',

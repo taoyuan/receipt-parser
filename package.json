@@ -16,16 +16,22 @@
     "receipt",
     "parser"
   ],
+  "dependencies": {
+    "lodash": "^4.3.0",
+    "tokenizee": "^0.1.3"
+  },
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint-config-xo-space": "^0.8.0",
     "gulp": "^3.9.1",
+    "gulp-coveralls": "^0.1.4",
     "gulp-eslint": "^1.1.1",
     "gulp-exclude-gitignore": "^1.0.0",
     "gulp-istanbul": "^0.10.3",
     "gulp-mocha": "^2.2.0",
-    "gulp-plumber": "^1.1.0",
     "gulp-nsp": "^2.3.0",
-    "gulp-coveralls": "^0.1.4"
+    "gulp-plumber": "^1.1.0",
+    "mocha": "^2.4.5"
   },
   "eslintConfig": {
     "extends": "xo-space",
@@ -38,9 +44,5 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "MIT",
-  "dependencies": {
-    "lodash": "^4.3.0",
-    "tokenizee": "^0.1.3"
-  }
+  "license": "MIT"
 }
