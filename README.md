@@ -18,9 +18,9 @@ MIT © [taoyuan]()
 
 [npm-image]: https://badge.fury.io/js/receipt-parser.svg
 [npm-url]: https://npmjs.org/package/receipt-parser
-[travis-image]: https://travis-ci.org//receipt-parser.svg?branch=master
-[travis-url]: https://travis-ci.org//receipt-parser
-[daviddm-image]: https://david-dm.org//receipt-parser.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org//receipt-parser
-[coveralls-image]: https://coveralls.io/repos//receipt-parser/badge.svg
-[coveralls-url]: https://coveralls.io/r//receipt-parser
+[travis-image]: https://travis-ci.org/taoyuan/receipt-parser.svg?branch=master
+[travis-url]: https://travis-ci.org/taoyuan/receipt-parser
+[daviddm-image]: https://david-dm.org/taoyuan/receipt-parser.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/taoyuan/receipt-parser
+[coveralls-image]: https://coveralls.io/repos/taoyuan/receipt-parser/badge.svg
+[coveralls-url]: https://coveralls.io/r/taoyuan/receipt-parser

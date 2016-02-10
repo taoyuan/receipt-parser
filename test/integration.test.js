@@ -101,7 +101,7 @@ var schema = [{
 describe('integration', function () {
   it('should parse a receipt', function () {
     var parser = new Parser(schema);
-    var data = fs.readFileSync(path.resolve(__dirname, "receipt.txt"), "utf8");
+    var data = fs.readFileSync(path.resolve(__dirname, "fixtures/receipt.txt"), "utf8");
     var result = parser.parse(data);
     t.deepEqual({
       '序号': '1602061110170068',
