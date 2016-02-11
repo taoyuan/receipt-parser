@@ -37,6 +37,9 @@
     }
   },
   "repository": "/receipt-parser",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
