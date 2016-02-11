@@ -29,7 +29,7 @@ var schema = [{
   type: 'list',
   name: '商品',
   end: '总额',
-  origin: 4, // from line 4
+  anchor: 4, // from line 4
   cols: {
     名称: [[0, 0]],
     编号: [[0, 1]],
@@ -40,15 +40,15 @@ var schema = [{
   }
 }, {
   name: '终端',
-  origin: "总额",
+  anchor: "总额",
   pos: [[3, 2]]
 }, {
   name: 'REF',
-  origin: "REF",
+  anchor: "REF",
   pos: 2
 }, {
   name: '凭证号',
-  origin: "凭证号",
+  anchor: "凭证号",
   pos: 2
 }];
 
