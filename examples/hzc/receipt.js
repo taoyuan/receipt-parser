@@ -12,7 +12,7 @@ var schema = [{
   //type: 'date',
   name: '日期',
   anchor: '销售日期',
-  pos: [2, 2, ' ']
+  pos: [0, 2, 2, ' ']
 }, {
   type: 'number',
   name: '收银员编号',
@@ -72,28 +72,28 @@ var schema = [{
   //anchor: 9,
   end: '--',
   cols: {
-    编号: [[0, 0]],
-    名称: [[0, 1], -1, ' '],
+    编号: [0, 0],
+    名称: [0, 1, -1, ' '],
     原价: {
       type: 'number',
-      pos: [[1, 0]]
+      pos: [1, 0]
     },
     折扣: {
       type: 'number',
-      pos: [[1, 1]]
+      pos: [1, 1]
     },
     单价: {
       type: 'number',
-      pos: [[1, 2]]
+      pos: [1, 2]
     },
-    柜组: [[2, 0]],
+    柜组: [2, 0],
     数量: {
       type: 'number',
-      pos: [[2, 1]]
+      pos: [2, 1]
     },
     金额: {
       type: 'number',
-      pos: [[2, 2]]
+      pos: [2, 2]
     }
   }
 }];
