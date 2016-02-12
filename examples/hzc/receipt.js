@@ -2,12 +2,12 @@
 
 var fs = require('fs');
 var path = require('path');
-var Parser = require('../..');
+var Parser = require('../..').Parser;
 
 var schema = [{
   name: '序号',
   anchor: '本机流水',
-  pos: 2
+  pos: 2 // line 0 column 2
 }, {
   //type: 'date',
   name: '日期',
@@ -67,35 +67,40 @@ var schema = [{
 }, {
   type: 'list',
   name: '商品',
+  //anchor: 9, // or line 9
   anchor: '--',
-  skip: 14,
-  //anchor: 9,
+  pos: [4], // line 4 column 0 after anchor
   end: '--',
-  cols: {
-    编号: [0, 0],
-    名称: [0, 1, -1, ' '],
-    原价: {
-      type: 'number',
-      pos: [1, 0]
-    },
-    折扣: {
-      type: 'number',
-      pos: [1, 1]
-    },
-    单价: {
-      type: 'number',
-      pos: [1, 2]
-    },
-    柜组: [2, 0],
-    数量: {
-      type: 'number',
-      pos: [2, 1]
-    },
-    金额: {
-      type: 'number',
-      pos: [2, 2]
-    }
-  }
+  cols: [{
+    name: '编号',
+    pos: [0, 0]
+  }, {
+    name: '名称',
+    pos: [0, 1, -1, ' ']
+  }, {
+    name: '原价',
+    type: 'number',
+    pos: [1, 0]
+  }, {
+    name: '折扣',
+    type: 'number',
+    pos: [1, 1]
+  }, {
+    name: '单价',
+    type: 'number',
+    pos: [1, 2]
+  }, {
+    name: '柜组',
+    pos: [2, 0]
+  }, {
+    name: '数量',
+    type: 'number',
+    pos: [2, 1]
+  }, {
+    name: '金额',
+    type: 'number',
+    pos: [2, 2]
+  }]
 }];
 
 var parser = new Parser(schema);

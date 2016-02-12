@@ -73,7 +73,8 @@ exports.receipt = {
   // object cols
   schema1: [{
     name: '序号',
-    anchor: '本机流水',
+    // anchor: '本机流水',
+    anchor: 4, // line 4
     pos: 2
   }, {
     //type: 'date',
@@ -92,7 +93,8 @@ exports.receipt = {
   }, {
     name: '收银机号',
     anchor: '收银机号',
-    pos: 2
+    pos: 2,
+    lex: [0, 2] // test for lex [index, count]
   }, {
     type: 'number',
     name: '原价金额',
@@ -136,10 +138,10 @@ exports.receipt = {
     name: '商品',
     anchor: '--',
     end: '--',
-    skip: 14,
+    pos: [4], // line 4 after anchor
     cols: {
       编号: [0, 0],
-      名称: [0, 1, -1, ' '],
+      名称: [[0, 1], -1, ' '], // or [0, 1, -1, ' ']
       原价: {
         type: 'number',
         pos: [1, 0]
@@ -228,8 +230,8 @@ exports.receipt = {
     type: 'list',
     name: '商品',
     anchor: '--',
+    pos: [4], // line 4 after anchor
     end: '--',
-    skip: 14,
     cols: [{
       name: '编号',
       pos: [0, 0]

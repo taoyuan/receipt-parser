@@ -1,7 +1,7 @@
 'use strict';
 
 var fs = require('fs');
-var Parser = require('../..');
+var Parser = require('../..').Parser;
 
 var schema = [{
   name: '店名',
